@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="373.1" height="270.216" viewBox="0 0 373.1 270.216">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Polygon_23" data-name="Polygon 23" d="M128.486,0,256.971,338.724H0Z" transform="translate(338.724) rotate(90)" fill="#3e5f9b" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="triangle-graphic-1" transform="translate(-194.639 -121.42)">
+    <g id="Polygon_13" data-name="Polygon 13" transform="translate(471.803 298.259) rotate(90)" fill="rgba(255,255,255,0)">
+      <path d="M 91.20020294189453 121.0131378173828 L 2.176867723464966 121.0131378173828 L 46.68853378295898 4.212218761444092 L 91.20020294189453 121.0131378173828 Z" stroke="none"/>
+      <path d="M 46.68853378295898 8.424392700195312 L 4.353729248046875 119.5131378173828 L 89.02333831787109 119.5131378173828 L 46.68853378295898 8.424392700195312 M 46.68853378295898 -7.62939453125e-06 L 93.37705993652344 122.5131378173828 L 7.62939453125e-06 122.5131378173828 L 46.68853378295898 -7.62939453125e-06 Z" stroke="none" fill="#fff"/>
+    </g>
+    <g id="Mask_Group_67" data-name="Mask Group 67" transform="translate(229.014 121.42)" clip-path="url(#clip-path)">
+      <g id="Group_16504" data-name="Group 16504" transform="translate(-245.792 38.508) rotate(-20)">
+        <g id="Component_77_271" data-name="Component 77 – 271" transform="translate(0 339.278)">
+          <rect id="Rectangle_4908" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_272" data-name="Component 77 – 272" transform="translate(0 315.044)">
+          <rect id="Rectangle_4908-2" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_273" data-name="Component 77 – 273" transform="translate(0 290.81)">
+          <rect id="Rectangle_4908-3" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_274" data-name="Component 77 – 274" transform="translate(0 266.576)">
+          <rect id="Rectangle_4908-4" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_275" data-name="Component 77 – 275" transform="translate(0 242.341)">
+          <rect id="Rectangle_4908-5" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_276" data-name="Component 77 – 276" transform="translate(0 218.107)">
+          <rect id="Rectangle_4908-6" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_277" data-name="Component 77 – 277" transform="translate(0 193.873)">
+          <rect id="Rectangle_4908-7" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_278" data-name="Component 77 – 278" transform="translate(0 169.639)">
+          <rect id="Rectangle_4908-8" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_279" data-name="Component 77 – 279" transform="translate(0 145.405)">
+          <rect id="Rectangle_4908-9" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_280" data-name="Component 77 – 280" transform="translate(0 121.171)">
+          <rect id="Rectangle_4908-10" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_281" data-name="Component 77 – 281" transform="translate(0 96.937)">
+          <rect id="Rectangle_4908-11" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_282" data-name="Component 77 – 282" transform="translate(0 72.702)">
+          <rect id="Rectangle_4908-12" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_283" data-name="Component 77 – 283" transform="translate(0 48.468)">
+          <rect id="Rectangle_4908-13" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_284" data-name="Component 77 – 284" transform="translate(0 24.234)">
+          <rect id="Rectangle_4908-14" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+        <g id="Component_77_285" data-name="Component 77 – 285">
+          <rect id="Rectangle_4908-15" data-name="Rectangle 4908" width="594.668" height="11.185" fill="#3e5f9b"/>
+        </g>
+      </g>
+    </g>
+    <path id="Polygon_18" data-name="Polygon 18" d="M35.176,0,70.352,92.733H0Z" transform="translate(287.372 263.083) rotate(90)" fill="#4cb0b3"/>
+  </g>
+</svg>

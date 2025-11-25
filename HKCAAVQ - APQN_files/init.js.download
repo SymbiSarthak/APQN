@@ -1,0 +1,136 @@
+
+function getScrollbarWidth() {
+
+	// Creating invisible container
+	const outer = document.createElement('div');
+	outer.style.visibility = 'hidden';
+	outer.style.overflow = 'scroll'; // forcing scrollbar to appear
+	outer.style.msOverflowStyle = 'scrollbar'; // needed for WinJS apps
+	outer.style.position = 'absolute';
+	outer.style.top = '0';
+	outer.style.left = '0';
+	outer.style.width = '100%';
+	
+	document.body.appendChild(outer);
+
+	// Creating inner element and placing it in the container
+	const inner = document.createElement('div');
+	outer.appendChild(inner);
+	//console.log(outer.offsetWidth , inner.offsetWidth);
+
+	// Calculating difference between container's full width and the child width
+	const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth);
+
+	// Removing temporary elements from the DOM
+	outer.parentNode.removeChild(outer);
+
+	return scrollbarWidth;
+
+}
+$(document).ready(function(){
+	$('.table-responsive', '.editor').table({
+		className: 'table-responsive-wrapper',
+		width: 768		
+	});
+	
+	$(".menu-btn").on('click',function(){
+		let menu = $(".menu-container");
+		if(menu.hasClass('active')){
+			menu.removeClass('active');
+			$("html").css('overflow-y','auto');
+		} else {
+			menu.addClass('active');
+			$("html").css('overflow-y','hidden');
+		}
+	});
+	/* if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('.to-top').css('padding','0 20px');
+	} else {
+		$('.to-top').css('padding',' 0 20px');
+	} */
+	$('.to-top').click(function(){
+		$('.scroll').animate({
+			scrollTop: 0
+		});
+	});
+	var w = $('.menu').outerWidth(true) + 1;
+	var render = function() {
+			if($('.scroll').scrollTop() == 0){
+				$('.to-top').fadeOut('fast'); 
+				$('header').removeClass('scrolled');
+				$('.whatsapp').addClass('movedown');
+				// if(window.innerWidth > 767)$('.wts').removeClass('up');
+			}else{
+				$('.to-top').fadeIn('slow'); 
+				$('header').addClass('scrolled');
+				$('.whatsapp').removeClass('movedown');
+				// if(window.innerWidth > 767)$('.wts').addClass('up');
+			}
+			var offset = 0;
+			if(window.innerWidth < 1299)offset = 0;
+			if(window.innerWidth < 767 && $('footer.has-floating').length > 0)offset = 75; else offset = 0;
+			if($('footer').length > 0){
+				var top = $('footer').offset().top + offset;
+			}else {
+				var top = 0;
+			}
+			if($('.scrollBottom').length>0){
+				var scrollBottom = $('.scrollBottom').offset().top;
+				if(top <= scrollBottom - 180){
+					if(!$('.to-top').hasClass('floating')){
+						$('.to-top').css('max-width', "");
+						$('.to-top').addClass('floating');
+					}
+				}else{
+					if($('.to-top').hasClass('floating')){
+						$('.to-top').css('max-width', "calc(100% - "+getScrollbarWidth()+"px)");
+						$('.to-top').removeClass('floating');
+					}
+				}
+				if(top <= scrollBottom - 180 && window.innerWidth > 767){
+					if(!$('.floating-btn-group').hasClass('floating')){
+						$('.floating-btn-group').css('max-width', "");
+						$('.floating-btn-group').addClass('floating');
+					}
+				}else{
+					if($('.floating-btn-group').hasClass('floating')){
+						$('.floating-btn-group').css('max-width', "calc(100% - "+getScrollbarWidth()+"px)");
+						$('.floating-btn-group').removeClass('floating');
+					}
+				}
+			}
+			/* if($('.scroll').scrollTop() + $('.scroll').height() >$('#content').height() - $('footer').height()+ offset ){
+				$('.to-top').removeClass('floating');
+				// $('.whatsapp').removeClass('floating');
+				
+				if( window.innerWidth >1199 ) {
+					$('.to-top').css('padding','0 20px');
+				} else {
+					$('.to-top').css('padding','0 20px');
+				}
+			} else {
+				$('.to-top').addClass('floating');
+				// $('.whatsapp').addClass('floating');
+				if( window.innerWidth >1199 ) {
+					$('.to-top').css('padding',' 0 35px');
+				} else {
+					$('.to-top').css('padding',' 0 35px');
+				}
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					$('.to-top').css('padding','0 20px');
+				}
+			} */
+
+			// $('.subcontent').css('width', ($('.content').innerWidth() - w) + 'px');
+		
+		if(($('.scroll').scrollTop() > $("header").height()) && !$("header").hasClass('sticky')){
+			$("header").addClass('sticky');
+		} else if(($('.scroll').scrollTop() <= $("header").height()) && $("header").hasClass('sticky')){
+			$("header").removeClass('sticky');
+		}
+	};
+	$('.scroll').on('scroll resize touchmove', render);
+	render();
+
+
+});

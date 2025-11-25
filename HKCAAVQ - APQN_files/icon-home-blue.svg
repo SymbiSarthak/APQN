@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="icon-home-blue" transform="translate(-85 1)">
+    <rect id="Rectangle_3627" data-name="Rectangle 3627" width="46" height="46" transform="translate(85 -1)" fill="#eb002a" opacity="0"/>
+    <g id="Group_13032" data-name="Group 13032" transform="translate(-49 -2922)">
+      <g id="Rectangle_227" data-name="Rectangle 227" transform="translate(137 2924)" fill="rgba(255,255,255,0)" stroke="#eb002a" stroke-width="1" opacity="0">
+        <rect width="40" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="39" height="39" fill="none"/>
+      </g>
+      <path id="Subtraction_9" data-name="Subtraction 9" d="M15642.207,1419.709h-5.5v-12h-3.5l13-13,13,13h-3.5v12h-5.5v-8a4,4,0,0,0-8,0v8Z" transform="translate(-15488.709 1536.794)" fill="#1b457c"/>
+    </g>
+  </g>
+</svg>

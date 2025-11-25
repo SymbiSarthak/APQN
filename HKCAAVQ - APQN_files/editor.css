@@ -1,0 +1,383 @@
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  unicode-range: U+7db0, U+78A7, U+7B75;
+  font-style: normal;
+  font-weight: bold;
+  src: local(MS Gothic), local(Yu Gothic), local(PMingLiU);
+}
+
+.editor * {
+    font-family: Mulish, Noto Sans HK, Noto Sans SC,微軟正黑體, 'Microsoft JhengHei UI', 'Microsoft JhengHei', 'Heiti TC', STHeitiTC, 新細明體, 'PMingLiU';
+}
+
+.editor p, .editor div, .editor a, .editor li, .editor td, .editor th, .editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6 {margin:0px; padding:0px; color:#132445; font-weight: 300; line-height: 32px; font-size: 18px; word-wrap: break-word; white-space: normal; }
+
+.editor ul, .editor ol { margin: 0; }
+
+.editor ul, .editor ol { padding-left: 25px; }
+
+.editor img { border:none; }
+
+.editor a, .editor a:link, .editor a:active, .editor a:visited { color:#4398EF; font-size: inherit;text-decoration: underline; }
+
+.editor a:hover { color:#3a82ca; }
+
+.editor table.table-border, .editor table.table-border td, .editor table.table-border th { 
+	border-collapse: collapse; 
+	border: 1px solid #000000;
+}
+
+.editor td, .editor th { padding:3px; }
+
+hr { border:none; height:1px; background-color:rgba(27, 69, 124, 0.3); color:rgba(27, 69, 124, 0.3); }
+
+.editor .underline, .editor .underline * { text-decoration:underline; }
+
+.editor table, .editor img { max-width: 100%; height: auto; }
+
+.editor:after {
+	clear: both;
+    display: block;
+    content: " ";
+}
+
+.editor .table-responsive-wrapper {
+	width: 100%;
+}
+
+.editor .table-responsive-wrapper .table-responsive {
+
+}
+
+.editor .text-right {
+	float: left;
+	margin-right: 20px;
+}
+
+.editor .text-left {
+	float: right;
+	margin-left: 20px;
+}
+
+.editor .round-border {
+	border-radius: 30px;
+}
+
+.editor .two-col,
+.editor .three-col,
+.editor .four-col {
+	font-size: 0;
+	white-space: nowrap;
+}
+
+.editor .two-col .col,
+.editor .three-col .col,
+.editor .four-col .col {
+	display: inline-block;
+	vertical-align: top;
+	white-space: normal;
+}
+
+.editor .two-col .col {
+	width: 49%;
+}
+
+.editor .three-col .col {
+	width: 32%;
+}
+
+.editor .four-col .col {
+	width: 23.5%;
+}
+
+.editor .two-col .col + .col,
+.editor .three-col .col + .col,
+.editor .four-col .col + .col {
+	margin-left: 2%;
+}
+
+/* .editor ol:not([style*='list-style-type']){
+	counter-reset: css-counter 0;
+    padding: 0px 0 0px 25px;
+}
+.editor ol:not([style*='list-style-type']) > li{
+    margin: 12px 0;
+    list-style: none;
+    position: relative;
+    padding-left: 11px;
+	counter-increment: css-counter 1;
+}
+.editor ol:not([style*='list-style-type']) > li::before{
+	content: counter(css-counter, decimal-leading-zero);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	display: block;
+	background: rgba(27, 69, 124, 1) 0% 0% no-repeat padding-box;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: rgba(255, 255, 255, 1);
+	top: 2px;
+	left: -24px;
+	color: #FFFFFF;
+} */
+
+.editor .programme-title{
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 40px;
+	letter-spacing: 0px;
+	color: rgba(27, 69, 124, 1);
+    margin-bottom: 12px;
+}
+
+/* .editor ul:not([style*='list-style-type']){
+	padding: 7.5px 0 15px 25px;
+}
+.editor ul:not([style*='list-style-type']) > li{
+	margin: 5px 0;
+	list-style: none;
+	position: relative;
+	padding-left: 18px;
+}
+.editor ul:not([style*='list-style-type']) > li::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	text-align: center;
+	display: block;
+	background: rgba(27, 69, 124, 1) 0% 0% no-repeat padding-box;
+	border: 2px solid rgba(255, 255, 255, 1);
+	top: 2px;
+	left: -24px;
+	color: #FFFFFF;
+} */
+@media screen and (max-width: 768px) {
+	.editor .text-right,
+	.editor .text-left {
+		float: none;
+		display: block;
+		margin: 0 auto 20px;
+	}
+
+	.editor .two-col,
+	.editor .three-col,
+	.editor .four-col {
+		white-space: normal;
+	}
+
+	.editor .two-col .col,
+	.editor .three-col .col,
+	.editor .four-col .col {
+		display: block;
+		width: 100%;
+	}
+
+	.editor .two-col .col + .col,
+	.editor .three-col .col + .col,
+	.editor .four-col .col + .col {
+		margin-top: 20px;
+	}
+
+	.editor .two-col .col + .col,
+	.editor .three-col .col + .col,
+	.editor .four-col .col + .col {
+		margin-left: 0;
+	}
+}
+
+
+
+.editor .contentTitle{
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    color: #132445;
+}
+.editor .contentTitle2{
+    font-weight: 950;
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+    color: #1B457C;
+}
+.editor .addressRow, .editor .linkRow, .editor .downloadRow{
+    position: relative;
+    display: table;
+    box-sizing: border-box;
+    padding-left: 56px;
+    padding-top: 5px;;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7778em;
+    letter-spacing: 0px;
+    color: #132445;
+}
+.editor .linkRow, .editor .downloadRow{
+    font-weight: 400;
+    color: #4398EF;
+}
+.editor .addressRow::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/1/icon-address-red.svg');
+}
+.editor .linkRow::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/1/icon-links.svg');
+}
+.editor .downloadRow::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/1/icon-download.svg');
+}
+.editor table.hk_table {
+	border-top: solid 1px rgba(27, 69, 124, 0.3);
+}
+
+.editor table.hk_table tr {
+	border-bottom: solid 1px rgba(27, 69, 124, 0.3);
+}
+
+.editor table.hk_table tr td {
+	padding: 30px 0;
+	vertical-align: top
+}
+
+.editor table.hk_table tr td:first-child {
+	font-size: 22px;
+	font-weight: 800;
+	color: #EB002A;
+}
+  
+@media (max-width: 767px) {
+	.editor table.hk_table tr {
+		display: block;
+		padding: 30px 0;
+	}
+
+	.editor table.hk_table tr td {
+		display: block;
+		width: 100% !important;
+		padding: 0;
+	}
+
+	.editor table.hk_table tr td:first-child {
+		margin-bottom: 20px;
+	}
+}
+
+.editor ul.blueDotList, .editor ol.blueDotList{
+	list-style: none;
+	list-style-type: none;
+	padding-left: 0;
+	counter-reset: css-counter;
+	padding: 0;
+	margin: 0;
+}
+.editor ul.blueDotList li{
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 0px;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.editor ul.blueDotList li::before{
+	content: '';
+	position: absolute;
+	position: static;
+	left: 0.58em;
+    top: 0.5em;
+	flex-shrink: 0;
+	width: 12px;
+	height: 12px;
+	background-color: #1B457C;
+	display: inline-block;
+	margin-right: 18px;
+    margin-left: 5px;
+    margin-top: 0.51em;
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	/* margin-left: -12px;
+	transform: translateX(-16px); */
+	
+}
+.editor ul.blueDotList li+li{
+	margin-top: 11px;
+}
+
+.editor .arrow-title{
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 32px;
+    letter-spacing: -0.6px;
+	color: #3E5F9B;
+    padding-left: 46px;
+    margin-bottom: 30px;
+	background: url('../img/2/graphic-title.svg') no-repeat left center;
+}
+
+.editor ol.blueDotList li{
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 37px;
+	padding-left: 0px;
+	counter-increment: css-counter;
+	display: flex;
+    margin: 0px;
+}
+.editor ol.blueDotList li::before{
+	content: counter(css-counter, decimal-leading-zero);
+	position: static;
+	left: 0.35em;
+    top: 0.2em;
+	width: 24px;
+    height: 24px;
+    text-align: center;
+    display: block;
+    flex-shrink: 0;
+    background: rgba(27, 69, 124, 1) 0% 0% no-repeat padding-box;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 24px;
+	display: inline-block;
+    /* margin-left: -26px;
+    transform: translateX(-6px); */
+	margin-left: 0px;
+    margin-right: 11px;
+    margin-top: 0.2em;
+}
+.editor ol.blueDotList li+li{
+	margin-top: 12px;
+}

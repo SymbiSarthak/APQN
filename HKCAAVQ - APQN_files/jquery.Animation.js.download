@@ -1,0 +1,46 @@
+/*
+ * jQuery Animation Plugin
+ * Copyright (c) 2024 Alan Yeung
+ * Version: 1.00 (27-AUG-2024)
+ */
+(function($) {
+	$.fn.extend({
+		Ani: function(s, o, d, f = function(e) {}) {
+			let _self = $(this);
+			$(s).on("load scroll", function () {
+				if(_self.length > 0){					
+					if($(s).scrollTop()+window.innerHeight + o >= _self.offset().top){
+						if(!_self.hasClass('ani')){
+							setTimeout(function() 
+							{
+								_self.addClass('ani');
+								f(_self);
+							}, d);
+						}
+					}
+				}
+			});
+		},
+		AniChild: function(s, o, d, iv, f = function(e) {}) {
+			let _self = $(this);
+			iv = iv + d;
+			$(s).on("load scroll", function () {
+				_self.children().each(function(k,v){
+					if($(v).length > 0){
+						if($(s).scrollTop()+window.innerHeight + o >= _self.offset().top){
+							
+							iv =  d + iv;
+							if(!$(v).hasClass('ani')){
+								setTimeout(function() 
+								{
+									$(v).addClass('ani');
+									f($(v));
+								}, iv);
+							}
+						}
+					}
+				})
+			});
+		}
+	});
+})(jQuery);
